@@ -27,24 +27,24 @@ For Linux, the two most common boot loaders are known as **Linux Loader (LILO)**
 
 # [Linux filesystem](https://www.linuxfoundation.org/blog/blog/classic-sysadmin-the-linux-filesystem-explained)
 ![Ubuntu](image.png)
-1. /bin is the directory that contains binaries, that is, some of the applications and programs you can run.
-2. /boot directory contains files required for starting your system.
-3. /dev contains device files. Many of these are generated at boot time or even on the fly.
-4. /etc is the directory where files that contain the name of your system, the users and their passwords, the names of machines on your network and when and where the partitions on your hard disks should be mounted are all in here.
-5. /home is where you will find your users’ personal directories.
-6. /lib is where libraries live. Libraries are files containing code that your applications can use.
-7. /media directory is where external storage will be automatically mounted when you plug it in and try to access it.
-8. /mnt directory where you would manually mount storage devices or partitions.
-9. /opt directory is often where software you compile (that is, you build yourself from source code and do not install from your distribution repositories) sometimes lands. Applications will end up in the /opt/bin directory and libraries in the /opt/lib d
-10. /proc, like /dev is a virtual directory. It contains information about your computer, such as information about your CPU and the kernel your Linux system is running. As with /dev, the files and directories are generated when your computer starts, or on the fly, as your system is running and things change.
-11. /root is the home directory of the superuser (also known as the **“Administrator”**) of the system.
-12. /run is another new directory. System processes use it to store temporary data for their own nefarious reasons
-13. /sbin typically contains tools that can install stuff, delete stuff and format stuff. It contains applications that only the superuser (hence the initial s) will need.
-14. /usr directory was where users’ home directories were originally kept back. Many modern Linux distributions just put everything into /usr/bin and have /bin point to /usr/bin just in case erasing it completely would break something.
-15. /srv directory contains data for servers. If you are running a web server from your Linux box, your HTML files for your sites would go into /srv/http (or /srv/www). If you were running an FTP server, your files would go into /srv/ftp.
-16. /sys is another virtual directory like /proc and /dev and also contains information from devices connected to your computer.
-17. /tmp contains temporary files, usually placed there by applications that you are running.
-18. /var was originally given its name because its contents was deemed variable, in that it changed frequently.
+1. **/bin** is the directory that contains binaries, that is, some of the applications and programs you can run.
+2. **/boot** directory contains files required for starting your system.
+3. **/dev** contains device files. Many of these are generated at boot time or even on the fly.
+4. **/etc** is the directory where files that contain the name of your system, the users and their passwords, the names of machines on your network and when and where the partitions on your hard disks should be mounted are all in here.
+5. **/home** is where you will find your users’ personal directories.
+6. **/lib** is where libraries live. Libraries are files containing code that your applications can use.
+7. **/media** directory is where external storage will be automatically mounted when you plug it in and try to access it.
+8. **/mnt** directory where you would manually mount storage devices or partitions.
+9. **/opt** directory is often where software you compile (that is, you build yourself from source code and do not install from your distribution repositories) sometimes lands. Applications will end up in the /opt/bin directory and libraries in the /opt/lib d
+10. **/proc**, like /dev is a virtual directory. It contains information about your computer, such as information about your CPU and the kernel your Linux system is running. As with /dev, the files and directories are generated when your computer starts, or on the fly, as your system is running and things change.
+11. **/root** is the home directory of the superuser (also known as the **“Administrator”**) of the system.
+12. **/run** is another new directory. System processes use it to store temporary data for their own nefarious reasons
+13. **/sbin** typically contains tools that can install stuff, delete stuff and format stuff. It contains applications that only the superuser (hence the initial s) will need.
+14. **/usr** directory was where users’ home directories were originally kept back. Many modern Linux distributions just put everything into /usr/bin and have /bin point to /usr/bin just in case erasing it completely would break something.
+15. **/srv** directory contains data for servers. If you are running a web server from your Linux box, your HTML files for your sites would go into /srv/http (or /srv/www). If you were running an FTP server, your files would go into /srv/ftp.
+16. **/sys** is another virtual directory like /proc and /dev and also contains information from devices connected to your computer.
+17. **/tmp** contains temporary files, usually placed there by applications that you are running.
+18. **/var** was originally given its name because its contents was deemed variable, in that it changed frequently.
 
 
 ![root directory covered](https://www.linuxfoundation.org/hubfs/Imported_Blog_Media/standard-unix-filesystem-hierarchy-1.png)
