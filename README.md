@@ -4,6 +4,7 @@
 ---
 
 A server’s main responsibility is handling client requests. A server is a hardware or software component whose main component is to provide one or more services to other devices known as clients
+
 Types of Servers
 1. A [Web Server](https://www.baeldung.com/cs/application-server-vs-web-server#web-server) makes access to the Internet on any device possible. The purpose of a web server is to provide web services like retrieving web pages that are rendered on the client’s device
 2. [Application servers](https://www.baeldung.com/cs/application-server-vs-web-server#application-servers) are responsible for providing access to application software. For example, the Microsoft Office suite for a small network could be hosted on a dedicated server. File servers provide access to clients’ access to stored files. Database servers facilitate data storage, retrieval and processing functionalities.
