@@ -1,7 +1,4 @@
 # Linux 
-
----
-
 #### Server 
 
 ---
@@ -16,6 +13,7 @@ Types of Servers
 ---
 
 | Application Server                                    | Web Server                  |
+| ----------------------------------------------------- | --------------------------- |
 | Provides application functionality                    | Provides HTTP functionality |
 | Uses HTTP along with other communication protocols    | Uses HTTP protocol          |
 | Fault-tolerant                                        | Not as fault-tolerant       |
