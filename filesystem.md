@@ -4,8 +4,7 @@ A [filesystem](https://www.ninjaone.com/blog/linux-filesystems/) (FS) is an orga
 
 | FS  | Features  | Advantages  | Disadvantages  |
 |---|---|---|---|
-| ext4  | Stands for fourth extended filesystem, widely used for rob
-ustness with a journaling feature to prevent data corruption after crashes.  | Mature, high data integrity, good support for large files.  | Limited by total volume size.  |
+| ext4  | Stands for fourth extended filesystem, widely used for robustness with a journaling feature to prevent data corruption after crashes.  | Mature, high data integrity, good support for large files.  | Limited by total volume size.  |
 | XFS  | Known for high performance and scalability, particularly with large files and volumes; excels at parallel I/O.  | Excellent performance with large files, high scalability.  | More complex to manage; poor performance with small files.  |
 | Btrfs  | Features snapshotting, dynamic inode allocation, and integrated device management; supports transparent compression.  | Advanced features like error detection, flexible volume management.  | Younger, less widespread support compared to ext4.  |
 | ZFS on Linux  | Originally designed for Solaris, supports high storage capacities and integrates file system and volume management; includes robust data integrity verification.  | High data integrity, supports large storage capacities.  | Requires more memory for optimal performance.  |
