@@ -26,12 +26,12 @@ The Filesystem Hierarchy Standard (FHS) standardizes directory layouts across Li
 - Mounting a filesystem involves attaching it to a specific directory (mount point) in the existing directory structure.
   - `mount [-t fstype] [-o options] /path/to/device /path/to/mountpoint`
 - Linux system's filesystem table, aka [fstab](https://www.redhat.com/en/blog/etc-fstab), is a configuration table designed to ease the burden of mounting and unmounting file systems to a machine. Table structure:
-  - **Device**: usually the given name or UUID of the mounted device (sda1/sda2/etc).
-  - **Mount Point**: designates the directory where the device is/will be mounted.
-  - **File System Type**: nothing trick here, shows the type of filesystem in use.
-  - **Options**: lists any active mount options. If using multiple options they must be separated by commas. 
-  - **Backup Operation**: (the first digit) this is a binary system where 1 = dump utility backup of a partition. 0 = no backup. This is an outdated backup method and should NOT be used.
-  - **File System Check Order**: (second digit) Here we can see three possible outcomes.  0 means that fsck will not check the filesystem. Numbers higher than this represent the check order. The root filesystem should be set to 1 and other partitions set to 2.  
+  1. **Device**: usually the given name or UUID of the mounted device (sda1/sda2/etc).
+  2. **Mount Point**: designates the directory where the device is/will be mounted.
+  3. **File System Type**: nothing trick here, shows the type of filesystem in use.
+  4. **Options**: lists any active mount options. If using multiple options they must be separated by commas. 
+  5. **Backup Operation**: (the first digit) this is a binary system where 1 = dump utility backup of a partition. 0 = no backup. This is an outdated backup method and should NOT be used.
+  6. **File System Check Order**: (second digit) Here we can see three possible outcomes.  0 means that fsck will not check the filesystem. Numbers higher than this represent the check order. The root filesystem should be set to 1 and other partitions set to 2.  
 - Automatically mount a filesystem by adding a corresponding line to the /etc/fstab file as per the example.
   - `sudo nano /etc/fstab` then add a line to the bottom of the file
   - `/dev/sdb1 /media/user ext4 defaults 0 2` syntax `#<device> <mountpoint> <FS type> <mount opts> <dump><PassNo>`
