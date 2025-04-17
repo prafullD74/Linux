@@ -12,7 +12,7 @@ A [filesystem](https://www.ninjaone.com/blog/linux-filesystems/) (FS) is an orga
 
 The Filesystem Hierarchy Standard (FHS) standardizes directory layouts across Linux distributions, aiding software compatibility and system backup processes. Key directories :
 1. /bin for executable binaries
-2. etc for configuration files
+2. /etc for configuration files
 3. /home for user directories
 4. /var for variable data such as data directories for services such as web-, database-, or email servers.
 
@@ -63,7 +63,7 @@ The Filesystem Hierarchy Standard (FHS) standardizes directory layouts across Li
      - Permissions can be given in either a numerical way or symbolic way. ![alt text](image-2.png)
   2. `ls -ltr` to check the file permission of files and folders
      - -/d: This indicates the type of the file whether it is a file or a folder.
-     - ![Linux file permission](![alt text](image-1.png))
+     - ![Linux file permission](image-1.png)
      - dash(**-**): Dash defines it as a file.
      - **d**: d defines it as a directory(folder).
   3. `chown`: Changes the ownership of a file or directory to a specified user and/or group
